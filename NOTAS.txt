@@ -1,0 +1,143 @@
+###CLASE_1 --->rpiemr linea de codigo
+	en chrome about:blank
+	inspeccionar
+	ir a consola
+	y escribir linea a linea 
+		alert("camilo")
+		undefined
+		var nombre = "camilo"
+		undefined
+		nombre
+		'camilo'
+		alert("mi nombre es " + nombre)
+		undefined
+		nombre = "Juana la alpaca"
+		'Juana la alpaca'
+		alert("mi nombre es " + nombre)	
+		undefined
+		nombre =prompt ("cual es tu nombre?")
+		'camilocarrillo'
+		alert("mi nombre es " + nombre)
+		undefined
+		
+###CLASE_2 ---> Que es HTML/CSS/JS
+		HTML: Hyper Text Marca Text y es un texto plano y estructura informacion
+		
+			dentro de HTML está:
+				CSS -->Diseño del HTML, es posile inteactuar,todo es de forma
+						visual. 
+				JS --> Es realmente la programacion, controla cada botón
+					que hay en la pagina etc. 
+		
+		El navegador se encarga de interpretar a los tres anteriores. 
+		
+		
+###CLASE_#3 -->JS NO ES JAVA
+	JS: WEB, SERVIDOR,NODEJS,ROBOTS
+	JAVA: SERVIDORES, ORACLE,SERVER,BANCOS,ANDROID
+	
+###CLASE_4 PRIMEROS PASOS EN EL NAVEGADOR
+	En consola de google se puede escribir JS.
+	escribir:
+		alert("hola camilo");
+		var x=1;
+		var y=2;
+		var z=x+y;
+			{las comillas son para identifcar un string}
+			En JS el ; significa fin de instruccion excepcion el bloque code
+	Var = declara la existencia de una variable en memoria
+	
+###CLASE_5 --> HTML, CSS, JavaScript de verdad
+	Se creó un archivo HTML. se guardó en la carpeta del curso :) primero.html
+	LOS ARCHIVOS DE DISEÑO SIEMPRE SE HACE EN OTRO ARCHIVO
+	
+	JS SE AGREGA ANTES DE CERRAR BODY, PORQUE DEBE EJECUTARSE CUANDO YA TODO ESTÁ
+	EN PANTALLA.(SOLO CUANDO SE APRENDE)
+		document.write("mensaje especial con alerta"); me permite escribir 
+		js en html en el punto donde se pone la linea del codigo. 
+		REGLAS PARA VARIABLES JS:
+			- no inicia con numero
+			- no dejar espacios
+			- distingue mayus y minus
+		<style type="text/css">
+		<script typer="text/javascript">
+		Estos anteriores para difereir o aclarar codigo de que pertenece
+###CLASE_6 ---> PESO EN OTRO PLANETA
+	
+		g=9.8m/s
+		g en marte =3.7
+		g en jupiter=24.8
+		Crear un algoritmo donde ingrese su peso y te arroje el peso
+		en otro planeta 
+		se crea archivo marte.html
+###CLASE_8 ----> OBTENIENDO DATOS DEL USUARIO
+	var usuario = prompt("Cual es tu peso") nos trae u archivo string
+	var planeta = parseInt(prompt("Elige tu planeta\n 1 es marte 2 es Jupiter"))
+		el anterior con parseInt(Nos genera un tipo entero)y asi
+		poder trabajar operaciones con el mismo.
+
+###CLASE_9 ---> FLUJO Y CONDICIONALES
+	Se crea un archivo con condicionales y flujo de variables
+	concatenando int + string
+	NO CREAMOS UN NUEVO ARCHIVO PERO SI UN COMMIT NUEVO EN EL REPO
+	
+###CLASE_10 --->  DOM: Nuestro lugar de trabajo
+	
+	objetos: son onmrbes especiales que tienen por dentro funciones
+	atributos etc.
+	
+	uso de objetos que tiene el navegador. 
+		obejtos nativos del navegador
+			- el navegdor
+			- pestañas (tabs)
+			- contenido de pagina (((hablando de JS)))
+				*document(contenido de la pagina) tiene cada uno de los 
+					elementos de la pagina web,c ontrola todo su contenido
+					concepto /DOCUMENT OBJECT MODEL DOM es la fomra en que 
+					el navegador organiza el html dentro de una estructutra
+					especial donde podemos manejar sin problema nuestro html.
+					un arbol: 	HTML
+								/	\
+							HEAD	BODY
+							/			\
+						TITTLE		h1,p,script
+						
+				*window (accedes a las prpiedades de las tabs)obejtos
+					que maneja cada uno de los tabs.
+				*navigator (Acceder a las opciones del navegador)
+					capacidades especiales del navegador y el S.O.
+					
+###CLASE_11--->COMO FUNCIONAN WINDOW Y DOCUMENT
+	-document.write("Hola estudiante"); write es una funcion del objeto document
+		*cuando las funciones son parte de un objeto se llaman METODOS
+		* cuando la variable es parte de un objeto se llama ATRIBUTO/PROPIEDAD
+	-var ruta = window.location; Location es un atributo o propiedad del window
+	QUEDÉ EN 6:46
+					
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
