@@ -111,11 +111,76 @@
 	-document.write("Hola estudiante"); write es una funcion del objeto document
 		*cuando las funciones son parte de un objeto se llaman METODOS
 		* cuando la variable es parte de un objeto se llama ATRIBUTO/PROPIEDAD
-	-var ruta = window.location; Location es un atributo o propiedad del window
-	QUEDÉ EN 6:46
-					
+	- var ruta = window.location; Location es un atributo o propiedad del window.
+	- console.log: para reparar errores/// me deja mensajes en consola.
+					Es una herramienta para ver los objetos.
+					*console es el objeto y log el metodo*
+	independizamos el archivo JS y HTML, AHORA A DIBUJAR
+
+####CLASE_12 --> DIBUJANDO EN EL DOM
+	
+	Etiqueta CANVAS es para dibujar en JS. <canvas>
+	Solo se puede por JS no por HTML
+	
+	Entonces, Se crea una carpeta que contenga dos archivos
+	un html y otro JS. 
+	Desde el HTML se crea el obejto canvas con id "dibujo"
+	Y es llamada desde el JS que es donde se dibuja
+	Se almacena en una variable obteniendola con el siguiente condigo
+	#var d = document.getElementById("dibujito");
+	Y enseguida se obteiene el conexto del canvas con el siguiente codigo
+		#var lienzo = d.getContext("2d");
+	Es ahi donde ya podemos dibujar. 
+	para una linea:
+		lienzo.beginPath(); //inciia trazado
+		lienzo.strokeStyle = "red"; // Escoge color "atributo"
+		lienzo.moveTo(100,100); //Inicia dibujo
+		lienzo.lineTo(200,200); // traza linea
+		lienzo.stroke(); // atributo de lapiz
+		lienzo.closePath(); // fin del trazado
+
+##CLASE_13 QUE SON LAS FUNCIONES EN EL JS
+	FUNCION ES: CUANDO SE RE USA UN CODIGO
+	
+	creamos la funcion de linea de la siguiente manera:
+function dibujarLinea(color,xinicial,yinicial,xfinal,yfinal)
+{
+    lienzo.beginPath(); //inciia trazado
+    lienzo.strokeStyle = color; // Escoge color "atributo"
+    lienzo.moveTo(xinicial,yinicial); //Inicia dibujo
+    lienzo.lineTo(xfinal,yfinal); // traza linea
+    lienzo.stroke(); // atributo de lapiz
+    lienzo.closePath(); // fin del trazado
+}
+	SE INVOCA DE LA SIGUIENTE MANERA:
+		dibujarLinea("blue",300,300,100,10);
 		
-		
+###CLASE_14 ---> CICLOS WHILE Y FOR EN JS
+		SE REALIZA CICLOS PARA DIBUJAR LINEAS EN EJES
+		CON WHILE: 
+			DECLARANDO ANTERIORMENTE LAS VARIABLES	
+while(l < lineas)
+{
+    xi = 10 * l;
+    yf = 10 * (l + 1);
+    dibujarLinea("green",xi,0,0,yf);
+    l ++;
+		CON FOR:
+for (l = 0;l < lineas;l++)
+{
+    yi = 10 * l;
+    xf = 10 * (l + 1);
+    dibujarLinea("green",0,yi,xf,300);
+    l ++;
+}
+###CLASE_15---> EVENTOS Y FONMULARIOS EN HTML Y JS
+	EVENTOS: SON FUNCIONES QUE SE DISPARAN CUANDO ALGO OCURRE
+		EL MAS COMUN ES EL CLICK, TECLADO ETC.
+		UTF-8 AGREGA TILDES
+		INPUT TEXTO DE FOMRULARIOS
+		id IDENTIFICAMOS UNA EAUIQETA DE HTML PARA TRABAJR EN JS
+
+####CLASE_16 ---> DETECTAR EVENTOS DEL TECLADO CON JS
 	
 	
 	

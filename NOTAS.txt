@@ -174,10 +174,24 @@ for (l = 0;l < lineas;l++)
     l ++;
 }
 ###CLASE_15---> EVENTOS Y FONMULARIOS EN HTML Y JS
-	EVENTOS: SON FUNCIONES QUE OCURREN CUANDO ALGO PASA.
+	EVENTOS: SON FUNCIONES QUE SE DISPARAN CUANDO ALGO OCURRE
 		EL MAS COMUN ES EL CLICK, TECLADO ETC.
-		
+		UTF-8 AGREGA TILDES
+		INPUT TEXTO DE FOMRULARIOS
+		id IDENTIFICAMOS UNA EAUIQETA DE HTML PARA TRABAJR EN JS
+
+####CLASE_16 ---> DETECTAR EVENTOS DEL TECLADO CON JS
+
 	
+	git reset nos permite volver a la version anterior.
+	hard : Nos regresa tooodo hasta allá
+	soft : Nos conserva en el staying
+	
+	Ahora para ver un commit anterior escribimos
+	git checkout idCommit Archivo.ext //
+	Si queremos volverlo permanente, entonces 
+	git add
+	git commit
 	
 	
 	
