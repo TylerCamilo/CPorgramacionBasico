@@ -4,7 +4,7 @@ boton.addEventListener("click",dibujoPorClick);
 
 var d = document.getElementById("dibujito");
 var lienzo = d.getContext("2d"); //del canvas vamos a obtener el lienzo
-
+var ancho = d.width;
 
 //CREAMOS UNA FUNCION
 
@@ -22,10 +22,11 @@ function dibujoPorClick()
     var lineas = parseInt(texto.value);
     var l = 0;
     var xi, yf;
+    var espacio = ancho / lineas;
     while(l < lineas)
     {
-        xi = 10 * l;
-        yf = 10 * (l + 1);
+        xi = espacio * l;
+        yf = espacio * (l + 1);
         dibujarLinea("green",xi,0,300,yf);
         l ++;
     }    
