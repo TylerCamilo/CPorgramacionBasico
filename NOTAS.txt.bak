@@ -179,11 +179,9 @@ for (l = 0;l < lineas;l++)
 		UTF-8 AGREGA TILDES
 		INPUT TEXTO DE FOMRULARIOS
 		id IDENTIFICAMOS UNA EAUIQETA DE HTML PARA TRABAJR EN JS
-
-####CLASE_16 ---> DETECTAR EVENTOS DEL TECLADO CON JS
-
-	
-	git reset nos permite volver a la version anterior.
+		
+		
+		git reset nos permite volver a la version anterior.
 	hard : Nos regresa tooodo hasta allá
 	soft : Nos conserva en el staying
 	
@@ -192,6 +190,22 @@ for (l = 0;l < lineas;l++)
 	Si queremos volverlo permanente, entonces 
 	git add
 	git commit
+
+####CLASE_16 ---> DETECTAR EVENTOS DEL TECLADO CON JS
+
+	El lugar para detectar el evento de las flechas, el lugar correcto
+	es el document debido a que es el objeto donde se hace todo.
+	las flechas son un objeto de todo, hay un objeto dentro de html que tiene
+	todo lo que hacemos en HTML.
+	detecta que cualquier tecla del teclado ha sido presionada.
+	
+	Los eventos son opcionales
+	function dibujarTeclado (evento) <----Aqui se almacena de datos de lo 
+	ocurrido.
+	
+	VARIABLE,ATRIBUTO, PROPIEDAD/// CUANDO ESTAN EN MAYUSCULA DENOTAN
+	QUE NO CAMBIAN TAN SEGUIDO
+	
 	
 	
 	

@@ -4,14 +4,21 @@ var teclas = {
     LEFT: 37, 
     RIGTH: 39
 };// ESTO ES UNA SOLA LINEA DE CODIGO
-console.log(teclas);
 
 document.addEventListener("keyup",dibujarTeclado);
+
+var cuadrito=document.getElementById("area_de_dibujo");
+var papel = cuadrito.getContext("2d");
+var x = 150; // variable de ubicacion de pixel para x posicion ini
+var y = 150; // Variable de ubicacion de pixel para Y posicion ini
+
+dibujarLinea("red", 149,149,151,151,papel);
 
 function dibujarLinea(color,xinicial,yinicial,xfinal,yfinal,lienzo)
 {
     lienzo.beginPath(); //inciia trazado
     lienzo.strokeStyle = color; // Escoge color "atributo"
+    lienzo.lineWidth = 3; //Ancho de la linea es decir px
     lienzo.moveTo(xinicial,yinicial); //Inicia dibujo
     lienzo.lineTo(xfinal,yfinal); // traza linea
     lienzo.stroke(); // atributo de lapiz
@@ -20,22 +27,25 @@ function dibujarLinea(color,xinicial,yinicial,xfinal,yfinal,lienzo)
 
 function dibujarTeclado(evento)
 {
+    var colorcito = "pink";
+    var movimiento = 10;
 switch(evento.keyCode)
   {
     case teclas.UP:
-        console.log("Arriba");
+        dibujarLinea(colorcito, x, y, x, y - movimiento, papel);
+        y = y - movimiento;
         break;
     case teclas.DOWN:
-        console.log("Abajo");
+        dibujarLinea(colorcito, x, y, x, y + movimiento, papel);
+        y = y + movimiento;
         break;
     case teclas.LEFT:
-         console.log("Izquierda");
+        dibujarLinea(colorcito, x, y, x - movimiento, y, papel);
+        x = x - movimiento;
          break;
     case teclas.RIGTH:
-         console.log("Derecha");
+        dibujarLinea(colorcito, x, y, x + movimiento, y, papel);
+        x = x + movimiento;
          break;
-    default:
-        console.log("otra tecla")
-        break;
   }
 }
