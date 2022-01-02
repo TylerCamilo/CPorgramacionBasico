@@ -5,9 +5,9 @@ var teclas = {
     RIGTH: 39
 };// ESTO ES UNA SOLA LINEA DE CODIGO
 
-document.addEventListener("keyup",dibujarTeclado);
+document.addEventListener("mouseup",dibujarMouse);
 
-var cuadrito=document.getElementById("area_de_dibujo");
+var cuadrito = document.getElementById("area_de_dibujo");
 var papel = cuadrito.getContext("2d");
 var x = 150; // variable de ubicacion de pixel para x posicion ini
 var y = 150; // Variable de ubicacion de pixel para Y posicion ini
@@ -29,6 +29,7 @@ function dibujarTeclado(evento)
 {
     var colorcito = "pink";
     var movimiento = 10;
+  
 switch(evento.keyCode)
   {
     case teclas.UP:
@@ -48,4 +49,17 @@ switch(evento.keyCode)
         x = x + movimiento;
          break;
   }
+}
+function dibujarMouse(eventoMouse)
+{
+    var colorMouse = "Black"; 
+    console.log(eventoMouse);
+    var e = window.event;
+    var posX = e.layerX;
+    var posY = e.layerY;
+    alert("la posicionn de x y y es" + posX +"y"+ posY);
+
+
+    
+    
 }
