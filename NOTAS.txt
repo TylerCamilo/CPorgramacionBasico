@@ -230,30 +230,39 @@ for (l = 0;l < lineas;l++)
 
 	SE REALIZÓ ACTIVIDAD DE CREAR UN DIBUJADOR DE LINEA CON EL TECLADO. 
 	
-	RETO: mouse dowun /mouse up
-	dibujar sobre el canvas 
+	RETO: USAR EVENTO mouse down /mouse up
+	dibujar sobre el canvas usando el cursor del teclado
 	
 	pistas:
 	-	usar console log al evento y ver que coodenadas arroja 
 	-  Ver cual de los objetos del DOM es el que debemos usar para disparar
 		el eventos
-	- Son diferentes las coordenadas respecto a pantalla, Document y espacio
+	- Son diferentes las coordenadas respecto a pantalla,al Document y espacio
 	 de dibujo CANVAS
 	- Que operaciones matematicas debemos hacer para que correspondan al punto
 		en el canvas 
 	- Hacerlo en la menor cantidad de codigo posible
 	
-	PENDIENTE POR HACER, NO LO HICE ME MATÉ MUCHO LA CABEZZAAAA ME FALTA MAS 
+======== PENDIENTE POR HACER, NO LO HICE ME MATÉ MUCHO LA CABEZZAAAA ME FALTA MAS 
 
 ###CLASE_18--->FUNCIONES MATEMATICAS Y NUMEROS ALEATORIOS
 
 	VAMOS A DIBUJAR UNA VACA,POLLO, CERDO
 	PROBLEMA: QUEREMOS DIBUJAR UN MAPA DE 500X500 px
 			 TENDREMOS MARRANITO, VACA Y POLLO.
-			 
+			
 			COMO DIBUJAR EL MAPA DEL FONDO
 			COMO DIBUJAR CADA PERSONAJE
 			COMO GENERAR NUMEROS ALEATORIOS PARA POSICIONAR LO PERSONAJES
+			
+			JS NO TRABAJA CON NUMEROS ENTEROS, GENERA PORCENTAJE DE NU NUMERO 
+			EN UN RANGO DE 0,0000001 HASTA 0,9999999999
+			
+			Es decir,nos toca generar una ecuacion para determinar el equivalente 
+			a una aproximacion a un entero esa ecuacion es:
+			
+			1. Accediendo a la clase estatica de JS Math, es una coleccion de funciones espeicales
+			que permiten hacer operaciones matematicas complejas. 
 			
 			FUNCIONES MATEMATICAS DE JAVASCRIPT
 				Math coleccion de funciones especiales
@@ -266,21 +275,68 @@ for (l = 0;l < lineas;l++)
 				CREAMOS UNA FUNCION ALEATORIA:
 				
 var z;
-
 for(var i=0;i<10; i++)
 {
     z = aleatorio (-5,5);
     document.write(z + ",");
 }
-
 function aleatorio (min,maxi)
 {
     var resultado;
     resultado = Math.floor(Math.random() * (maxi - min +1))+ min;
     return resultado
 }
-				
 
+RETO:
+	
+
+	
+###CLASE_19 USO Y CARGA DE IMAGENES EN CANVAS
+				
+CANVAS SIEMPRE DIBUJA ENCIMA DE LA ULTIMA IMAGEN,
+PENSARLO COMO SI FUERAN CAPAS
+
+No sirve dibujar uno independiente debido a que el canvas pinta una sobre otra
+Entonces debemos hacer que todas queden en el dibujo.
+
+Se debe redibujar todo cuando hay algo de cambios.
+
+Cunado este dibujado la vaca lanza un evento load 
+y dira que esta lsita la vaca
+a su vez preguntará si esta listo los elementos dibujando de una
+manera ciclica cada uno de los elementos
+
+creando una variable para identificar que las imagenes estén listas
+una sola funcion dibujar a traves de los load si ya esta cargada la imagen
+	atributos la url y si ya cargó, son dos problemas que podemos tener
+	lo vamos a solucionar JSON
+	
+	en js no hay fomra de agregarle  a un objeto new image a un JSON.
+	
+	La forma en que separan los atributos dentro de un objeto literal
+	similar a JSON es con comas (,).
+	
+	EJERCICIO 1: CAMBIAR LA ESTRUCTURA DEL CODIGO PARA QUE SE DIBUJE UNA ENCIMA
+	DE LA OTRA PARA QUE EL EFECTO VISUAL SEA EL ADECUADO QUE TODOS LOS ELEMENTOS APAREZCAN CUANDO 
+	DEBEN
+	
+	EJERCICIO 2: DIBUJAR MULTIPLES VACAS
+	INVOCANDO MULTIPLES VECES metodo DrawImage
+	Sabemos que el cmapo es 500*500 y la vaca 80*80
+	
+	el limite es 500-80 = 420
+	para las posiciones en x y y
+	
+	
+	Dentro de la funcion aleatorio para crear esos rangos.
+	dentro de la funcion dibujar donde sabemos que la carga esta cargada
+	 creamos 
+	 var x = aleatorio(0,420)
+	 var y = aleatorio (0,420)
+	
+	RETOS:
+	1. AGREGAR LOS 3 ANIMALES DE UNA MANERA NO TAN CAOTICA Y QUE NO SE SALGA
+	2. QUE UN CERDO SE MUEVA POR TECLADO
 
 
 
