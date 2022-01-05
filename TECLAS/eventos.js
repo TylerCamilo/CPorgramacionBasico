@@ -5,7 +5,7 @@ var teclas = {
     RIGTH: 39
 };// ESTO ES UNA SOLA LINEA DE CODIGO
 
-document.addEventListener("mouseup",dibujarMouse);
+document.addEventListener("mouseup" || "mousedown",dibujarMouse);
 
 var cuadrito = document.getElementById("area_de_dibujo");
 var papel = cuadrito.getContext("2d");
@@ -51,15 +51,16 @@ switch(evento.keyCode)
   }
 }
 function dibujarMouse(eventoMouse)
-{
+    {
     var colorMouse = "Black"; 
     console.log(eventoMouse);
     var e = window.event;
     var posX = e.layerX;
     var posY = e.layerY;
-    alert("la posicionn de x y y es" + posX +"y"+ posY);
-
-
+        
+    if (event.button == 0)
+    {        
+        dibujarLinea(colorMouse,posX,posY,posX+3,posY+3,papel)
+    }   
     
-    
-}
+    }

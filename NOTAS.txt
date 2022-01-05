@@ -243,6 +243,56 @@ for (l = 0;l < lineas;l++)
 		en el canvas 
 	- Hacerlo en la menor cantidad de codigo posible
 	
+	PENDIENTE POR HACER, NO LO HICE ME MATÉ MUCHO LA CABEZZAAAA ME FALTA MAS 
+
+###CLASE_18--->FUNCIONES MATEMATICAS Y NUMEROS ALEATORIOS
+
+	VAMOS A DIBUJAR UNA VACA,POLLO, CERDO
+	PROBLEMA: QUEREMOS DIBUJAR UN MAPA DE 500X500 px
+			 TENDREMOS MARRANITO, VACA Y POLLO.
+			 
+			COMO DIBUJAR EL MAPA DEL FONDO
+			COMO DIBUJAR CADA PERSONAJE
+			COMO GENERAR NUMEROS ALEATORIOS PARA POSICIONAR LO PERSONAJES
+			
+			FUNCIONES MATEMATICAS DE JAVASCRIPT
+				Math coleccion de funciones especiales
+				Math.ceil = redondear para arriba
+				Math.Floor =  redondear para abajo
+				w = math.random();
+				
+				math.floor(random*(mai-min+1))+min
+				
+				CREAMOS UNA FUNCION ALEATORIA:
+				
+var z;
+
+for(var i=0;i<10; i++)
+{
+    z = aleatorio (-5,5);
+    document.write(z + ",");
+}
+
+function aleatorio (min,maxi)
+{
+    var resultado;
+    resultado = Math.floor(Math.random() * (maxi - min +1))+ min;
+    return resultado
+}
+				
+
+
+
+
+
+
+
+
+
+
+
+
+	
 	
 	
 	

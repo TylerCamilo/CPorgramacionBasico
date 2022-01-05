@@ -206,7 +206,72 @@ for (l = 0;l < lineas;l++)
 	VARIABLE,ATRIBUTO, PROPIEDAD/// CUANDO ESTAN EN MAYUSCULA DENOTAN
 	QUE NO CAMBIAN TAN SEGUIDO
 	
+	CANVAS TEIENE DOS ATRIBUTOS ANCHO Y ALTO
 	
+	addEventListener --> Esuchca cualquier evento
+	
+	document.addEventListener("keydown", dibujar teclado);
+	objeto.escucha_evento("evento", funcion lo que queremos que haga);
+	
+	document.addEventListener("keydown", dibujarTeclado);
+	function dibujarTeclado(variable)
+	
+		NOTA, addEventListener le pasa todos los datos del evento
+		a nuestra funcion, cuando invocamos la funcion podemos almacenar
+		simplemente dando un valor a la funcion ejemplo:
+		
+			function dibujarTeclado(Evento)
+			Evento sera la variable donde se almacene toda esta informacion 
+			detallata. 
+			
+			keyCode es un atributo de cada tecla. 
+			
+###CLASE_17 DIBUJAR EN CANVAS CON LAS FLECHAS DEL TECLADO
+
+	SE REALIZÓ ACTIVIDAD DE CREAR UN DIBUJADOR DE LINEA CON EL TECLADO. 
+	
+	RETO: mouse dowun /mouse up
+	dibujar sobre el canvas 
+	
+	pistas:
+	-	usar console log al evento y ver que coodenadas arroja 
+	-  Ver cual de los objetos del DOM es el que debemos usar para disparar
+		el eventos
+	- Son diferentes las coordenadas respecto a pantalla, Document y espacio
+	 de dibujo CANVAS
+	- Que operaciones matematicas debemos hacer para que correspondan al punto
+		en el canvas 
+	- Hacerlo en la menor cantidad de codigo posible
+	
+	PENDIENTE POR HACER, NO LO HICE ME MATÉ MUCHO LA CABEZZAAAA ME FALTA MAS 
+
+###CLASE_18--->FUNCIONES MATEMATICAS Y NUMEROS ALEATORIOS
+
+	VAMOS A DIBUJAR UNA VACA,POLLO, CERDO
+	PROBLEMA: QUEREMOS DIBUJAR UN MAPA DE 500X500 px
+			 TENDREMOS MARRANITO, VACA Y POLLO.
+			 
+			COMO DIBUJAR EL MAPA DEL FONDO
+			COMO DIBUJAR CADA PERSONAJE
+			COMO GENERAR NUMEROS ALEATORIOS PARA POSICIONAR LO PERSONAJES
+			
+			FUNCIONES MATEMATICAS DE JAVASCRIPT
+				Math coleccion de funciones especiales
+				Math.ceil = redondear para arriba
+				Math.Floor =  redondear para abajo
+				
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	
 	
