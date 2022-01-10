@@ -228,6 +228,9 @@ for (l = 0;l < lineas;l++)
 			
 ###CLASE_17 DIBUJAR EN CANVAS CON LAS FLECHAS DEL TECLADO
 
+	getElementById 	es el metdo del documento que nos trae un elemento al html
+	atraves del id
+
 	SE REALIZÓ ACTIVIDAD DE CREAR UN DIBUJADOR DE LINEA CON EL TECLADO. 
 	
 	RETO: USAR EVENTO mouse down /mouse up

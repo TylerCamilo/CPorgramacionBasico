@@ -5,7 +5,7 @@ var teclas = {
     RIGTH: 39
 };// ESTO ES UNA SOLA LINEA DE CODIGO
 
-document.addEventListener("mouseup" || "mousedown",dibujarMouse);
+document.addEventListener("keyup",dibujarTeclado);
 
 var cuadrito = document.getElementById("area_de_dibujo");
 var papel = cuadrito.getContext("2d");
@@ -27,14 +27,14 @@ function dibujarLinea(color,xinicial,yinicial,xfinal,yfinal,lienzo)
 
 function dibujarTeclado(evento)
 {
-    var colorcito = "pink";
+    var colorcito = "blue";
     var movimiento = 10;
   
 switch(evento.keyCode)
   {
     case teclas.UP:
         dibujarLinea(colorcito, x, y, x, y - movimiento, papel);
-        y = y - movimiento;
+        y = y - movimiento; //nuevo punto final
         break;
     case teclas.DOWN:
         dibujarLinea(colorcito, x, y, x, y + movimiento, papel);
@@ -50,17 +50,3 @@ switch(evento.keyCode)
          break;
   }
 }
-function dibujarMouse(eventoMouse)
-    {
-    var colorMouse = "Black"; 
-    console.log(eventoMouse);
-    var e = window.event;
-    var posX = e.layerX;
-    var posY = e.layerY;
-        
-    if (event.button == 0)
-    {        
-        dibujarLinea(colorMouse,posX,posY,posX+3,posY+3,papel)
-    }   
-    
-    }

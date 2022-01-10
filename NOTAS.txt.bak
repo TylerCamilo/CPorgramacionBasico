@@ -230,20 +230,20 @@ for (l = 0;l < lineas;l++)
 
 	SE REALIZÓ ACTIVIDAD DE CREAR UN DIBUJADOR DE LINEA CON EL TECLADO. 
 	
-	RETO: mouse dowun /mouse up
-	dibujar sobre el canvas 
+	RETO: USAR EVENTO mouse down /mouse up
+	dibujar sobre el canvas usando el cursor del teclado
 	
 	pistas:
 	-	usar console log al evento y ver que coodenadas arroja 
 	-  Ver cual de los objetos del DOM es el que debemos usar para disparar
 		el eventos
-	- Son diferentes las coordenadas respecto a pantalla, Document y espacio
+	- Son diferentes las coordenadas respecto a pantalla,al Document y espacio
 	 de dibujo CANVAS
 	- Que operaciones matematicas debemos hacer para que correspondan al punto
 		en el canvas 
 	- Hacerlo en la menor cantidad de codigo posible
 	
-	PENDIENTE POR HACER, NO LO HICE ME MATÉ MUCHO LA CABEZZAAAA ME FALTA MAS 
+======== PENDIENTE POR HACER, NO LO HICE ME MATÉ MUCHO LA CABEZZAAAA ME FALTA MAS 
 
 ###CLASE_18--->FUNCIONES MATEMATICAS Y NUMEROS ALEATORIOS
 
@@ -286,6 +286,11 @@ function aleatorio (min,maxi)
     resultado = Math.floor(Math.random() * (maxi - min +1))+ min;
     return resultado
 }
+
+RETO:
+	
+
+	
 ###CLASE_19 USO Y CARGA DE IMAGENES EN CANVAS
 				
 CANVAS SIEMPRE DIBUJA ENCIMA DE LA ULTIMA IMAGEN,
