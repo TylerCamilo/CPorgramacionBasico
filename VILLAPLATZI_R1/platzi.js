@@ -77,7 +77,7 @@ function dibujar()
     if(vaca.cargaOK)
     {
         var cantidad = aleatorio(5,25);
-        console.log(cantidad);
+        console.log(cantidad );
         for (var v = 0;v < cantidad; v++)
         {
             var x = aleatorio(0,7) //Posicion aceptable
