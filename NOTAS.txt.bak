@@ -228,6 +228,9 @@ for (l = 0;l < lineas;l++)
 			
 ###CLASE_17 DIBUJAR EN CANVAS CON LAS FLECHAS DEL TECLADO
 
+	getElementById 	es el metdo del documento que nos trae un elemento al html
+	atraves del id
+
 	SE REALIZÓ ACTIVIDAD DE CREAR UN DIBUJADOR DE LINEA CON EL TECLADO. 
 	
 	RETO: USAR EVENTO mouse down /mouse up
@@ -265,12 +268,13 @@ for (l = 0;l < lineas;l++)
 			que permiten hacer operaciones matematicas complejas. 
 			
 			FUNCIONES MATEMATICAS DE JAVASCRIPT
+			
 				Math coleccion de funciones especiales
-				Math.ceil = redondear para arriba
-				Math.Floor =  redondear para abajo
-				w = math.random();
+					Math.ceil = redondear para arriba
+					Math.Floor =  redondear para abajo
+					w = math.random();
 				
-				math.floor(random*(mai-min+1))+min
+					math.floor(random*(mai-min+1))+min
 				
 				CREAMOS UNA FUNCION ALEATORIA:
 				
@@ -336,8 +340,38 @@ una sola funcion dibujar a traves de los load si ya esta cargada la imagen
 	
 	RETOS:
 	1. AGREGAR LOS 3 ANIMALES DE UNA MANERA NO TAN CAOTICA Y QUE NO SE SALGA
-	2. QUE UN CERDO SE MUEVA POR TECLADO
+	2. QUE UN CERDO SE MUEVA POR TECLADO.
+	
 
+####CLASE_20  División, módulo y residuo en JavaScript
+
+ESCRIBE LOS NUMEROS DEL 1 AL 100, SI ES MULTPLO 3 ESCRIBES FIZZ Y ES DE 5 BUZZ. 
+Y SI ES DE LOS DOS SE PONE FIZZ BUZZ
+
+OPERACION MODULO %
+5%5 = 0
+4%3 = 1
+
+var numeros = 100;
+
+for(var i = 1; i <= 100; i++)
+{
+    if (i % 3 == 0)
+    {
+        document.write("Fizz");
+    }
+    if (i % 5 == 0)
+    {
+        document.write("Buzz");
+    }
+    if(i % 3 != 0 && i % 5 != 0)
+    {
+        document.write(i);
+    }
+    document.write("<br/>");
+}
+
+###CLASE_21 CLASES Y ARREYS EN JS
 
 
 
