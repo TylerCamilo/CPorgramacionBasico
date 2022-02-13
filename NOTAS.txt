@@ -179,11 +179,9 @@ for (l = 0;l < lineas;l++)
 		UTF-8 AGREGA TILDES
 		INPUT TEXTO DE FOMRULARIOS
 		id IDENTIFICAMOS UNA EAUIQETA DE HTML PARA TRABAJR EN JS
-
-####CLASE_16 ---> DETECTAR EVENTOS DEL TECLADO CON JS
-
-	
-	git reset nos permite volver a la version anterior.
+		
+		
+		git reset nos permite volver a la version anterior.
 	hard : Nos regresa tooodo hasta allá
 	soft : Nos conserva en el staying
 	
@@ -192,8 +190,230 @@ for (l = 0;l < lineas;l++)
 	Si queremos volverlo permanente, entonces 
 	git add
 	git commit
+
+####CLASE_16 ---> DETECTAR EVENTOS DEL TECLADO CON JS
+
+	El lugar para detectar el evento de las flechas, el lugar correcto
+	es el document debido a que es el objeto donde se hace todo.
+	las flechas son un objeto de todo, hay un objeto dentro de html que tiene
+	todo lo que hacemos en HTML.
+	detecta que cualquier tecla del teclado ha sido presionada.
+	
+	Los eventos son opcionales
+	function dibujarTeclado (evento) <----Aqui se almacena de datos de lo 
+	ocurrido.
+	
+	VARIABLE,ATRIBUTO, PROPIEDAD/// CUANDO ESTAN EN MAYUSCULA DENOTAN
+	QUE NO CAMBIAN TAN SEGUIDO
+	
+	CANVAS TEIENE DOS ATRIBUTOS ANCHO Y ALTO
+	
+	addEventListener --> Esuchca cualquier evento
+	
+	document.addEventListener("keydown", dibujar teclado);
+	objeto.escucha_evento("evento", funcion lo que queremos que haga);
+	
+	document.addEventListener("keydown", dibujarTeclado);
+	function dibujarTeclado(variable)
+	
+		NOTA, addEventListener le pasa todos los datos del evento
+		a nuestra funcion, cuando invocamos la funcion podemos almacenar
+		simplemente dando un valor a la funcion ejemplo:
+		
+			function dibujarTeclado(Evento)
+			Evento sera la variable donde se almacene toda esta informacion 
+			detallata. 
+			
+			keyCode es un atributo de cada tecla. 
+			
+###CLASE_17 DIBUJAR EN CANVAS CON LAS FLECHAS DEL TECLADO
+
+	getElementById 	es el metdo del documento que nos trae un elemento al html
+	atraves del id
+
+	SE REALIZÓ ACTIVIDAD DE CREAR UN DIBUJADOR DE LINEA CON EL TECLADO. 
+	
+	RETO: USAR EVENTO mouse down /mouse up
+	dibujar sobre el canvas usando el cursor del teclado
+	
+	pistas:
+	-	usar console log al evento y ver que coodenadas arroja 
+	-  Ver cual de los objetos del DOM es el que debemos usar para disparar
+		el eventos
+	- Son diferentes las coordenadas respecto a pantalla,al Document y espacio
+	 de dibujo CANVAS
+	- Que operaciones matematicas debemos hacer para que correspondan al punto
+		en el canvas 
+	- Hacerlo en la menor cantidad de codigo posible
+	
+======== PENDIENTE POR HACER, NO LO HICE ME MATÉ MUCHO LA CABEZZAAAA ME FALTA MAS 
+
+###CLASE_18--->FUNCIONES MATEMATICAS Y NUMEROS ALEATORIOS
+
+	VAMOS A DIBUJAR UNA VACA,POLLO, CERDO
+	PROBLEMA: QUEREMOS DIBUJAR UN MAPA DE 500X500 px
+			 TENDREMOS MARRANITO, VACA Y POLLO.
+			
+			COMO DIBUJAR EL MAPA DEL FONDO
+			COMO DIBUJAR CADA PERSONAJE
+			COMO GENERAR NUMEROS ALEATORIOS PARA POSICIONAR LO PERSONAJES
+			
+			JS NO TRABAJA CON NUMEROS ENTEROS, GENERA PORCENTAJE DE NU NUMERO 
+			EN UN RANGO DE 0,0000001 HASTA 0,9999999999
+			
+			Es decir,nos toca generar una ecuacion para determinar el equivalente 
+			a una aproximacion a un entero esa ecuacion es:
+			
+			1. Accediendo a la clase estatica de JS Math, es una coleccion de funciones espeicales
+			que permiten hacer operaciones matematicas complejas. 
+			
+			FUNCIONES MATEMATICAS DE JAVASCRIPT
+			
+				Math coleccion de funciones especiales
+					Math.ceil = redondear para arriba
+					Math.Floor =  redondear para abajo
+					w = math.random();
+				
+					math.floor(random*(mai-min+1))+min
+				
+				CREAMOS UNA FUNCION ALEATORIA:
+				
+var z;
+for(var i=0;i<10; i++)
+{
+    z = aleatorio (-5,5);
+    document.write(z + ",");
+}
+function aleatorio (min,maxi)
+{
+    var resultado;
+    resultado = Math.floor(Math.random() * (maxi - min +1))+ min;
+    return resultado
+}
+
+RETO:
+	
+
+	
+###CLASE_19 USO Y CARGA DE IMAGENES EN CANVAS
+				
+CANVAS SIEMPRE DIBUJA ENCIMA DE LA ULTIMA IMAGEN,
+PENSARLO COMO SI FUERAN CAPAS
+
+No sirve dibujar uno independiente debido a que el canvas pinta una sobre otra
+Entonces debemos hacer que todas queden en el dibujo.
+
+Se debe redibujar todo cuando hay algo de cambios.
+
+Cunado este dibujado la vaca lanza un evento load 
+y dira que esta lsita la vaca
+a su vez preguntará si esta listo los elementos dibujando de una
+manera ciclica cada uno de los elementos
+
+creando una variable para identificar que las imagenes estén listas
+una sola funcion dibujar a traves de los load si ya esta cargada la imagen
+	atributos la url y si ya cargó, son dos problemas que podemos tener
+	lo vamos a solucionar JSON
+	
+	en js no hay fomra de agregarle  a un objeto new image a un JSON.
+	
+	La forma en que separan los atributos dentro de un objeto literal
+	similar a JSON es con comas (,).
+	
+	EJERCICIO 1: CAMBIAR LA ESTRUCTURA DEL CODIGO PARA QUE SE DIBUJE UNA ENCIMA
+	DE LA OTRA PARA QUE EL EFECTO VISUAL SEA EL ADECUADO QUE TODOS LOS ELEMENTOS APAREZCAN CUANDO 
+	DEBEN
+	
+	EJERCICIO 2: DIBUJAR MULTIPLES VACAS
+	INVOCANDO MULTIPLES VECES metodo DrawImage
+	Sabemos que el cmapo es 500*500 y la vaca 80*80
+	
+	el limite es 500-80 = 420
+	para las posiciones en x y y
 	
 	
+	Dentro de la funcion aleatorio para crear esos rangos.
+	dentro de la funcion dibujar donde sabemos que la carga esta cargada
+	 creamos 
+	 var x = aleatorio(0,420)
+	 var y = aleatorio (0,420)
+	
+	RETOS:
+	1. AGREGAR LOS 3 ANIMALES DE UNA MANERA NO TAN CAOTICA Y QUE NO SE SALGA
+	2. QUE UN CERDO SE MUEVA POR TECLADO.
+	
+
+####CLASE_20  División, módulo y residuo en JavaScript
+
+ESCRIBE LOS NUMEROS DEL 1 AL 100, SI ES MULTPLO 3 ESCRIBES FIZZ Y ES DE 5 BUZZ. 
+Y SI ES DE LOS DOS SE PONE FIZZ BUZZ
+
+OPERACION MODULO %
+5%5 = 0
+4%3 = 1
+
+var numeros = 100;
+
+for(var i = 1; i <= 100; i++)
+{
+    if (i % 3 == 0)
+    {
+        document.write("Fizz");
+    }
+    if (i % 5 == 0)
+    {
+        document.write("Buzz");
+    }
+    if(i % 3 != 0 && i % 5 != 0)
+    {
+        document.write(i);
+    }
+    document.write("<br/>");
+}
+
+###CLASE_21 CLASES Y ARREYS EN JS
+
+DEFINICIONES DEL OBJETO SE LLAMAN CLASES
+DESARROLLO DE UN JUEGO CON LOS MISMOS DIBUJOS DE LA CLASE 19
+CAUHCIN V100/A30
+POKACHO V80/A50 
+TOCINAURO V120/A40
+
+class Pakiman
+{
+    constructor(n, v, a)
+    {
+        this.nombre = n; //this es la instancia de la clase pakiman
+        this.vida = v;
+        this.ataque = a;
+    }
+    hablar()
+    {
+        alert(this.nombre)
+    }
+}
+
+VAR CAUCHON =NEW PAKIMAN()
+
+cajitas.push("algo") agrega a la ultima posicion
+var cajitas = [] asignacion de array
+
+array asociativo es cuando un array es u string
+
+
+in itera en indice
+of itera sobre objeto
+
+insertar imagen con appendchild
+this se refiere a la instancia de la clase (solo para esta imagen)
+push empuja elementos a un array
+
+
+###CLASE 22 DIAGRAMA DE FLUJO DE CAJERO AUTOMATICO
+
+	Explicacion del algoritmo del cajero
+### CLASE 23, IMPLEMENTACION DEL CAJERO AUTOMATICO
+
 	
 	
 	
