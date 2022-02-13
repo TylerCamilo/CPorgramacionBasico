@@ -379,17 +379,41 @@ CAUHCIN V100/A30
 POKACHO V80/A50 
 TOCINAURO V120/A40
 
+class Pakiman
+{
+    constructor(n, v, a)
+    {
+        this.nombre = n; //this es la instancia de la clase pakiman
+        this.vida = v;
+        this.ataque = a;
+    }
+    hablar()
+    {
+        alert(this.nombre)
+    }
+}
 
-16:11
+VAR CAUCHON =NEW PAKIMAN()
+
+cajitas.push("algo") agrega a la ultima posicion
+var cajitas = [] asignacion de array
+
+array asociativo es cuando un array es u string
 
 
+in itera en indice
+of itera sobre objeto
+
+insertar imagen con appendchild
+this se refiere a la instancia de la clase (solo para esta imagen)
+push empuja elementos a un array
 
 
+###CLASE 22 DIAGRAMA DE FLUJO DE CAJERO AUTOMATICO
 
+	Explicacion del algoritmo del cajero
+### CLASE 23, IMPLEMENTACION DEL CAJERO AUTOMATICO
 
-
-
-	
 	
 	
 	

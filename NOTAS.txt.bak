@@ -373,13 +373,40 @@ for(var i = 1; i <= 100; i++)
 
 ###CLASE_21 CLASES Y ARREYS EN JS
 
+DEFINICIONES DEL OBJETO SE LLAMAN CLASES
+DESARROLLO DE UN JUEGO CON LOS MISMOS DIBUJOS DE LA CLASE 19
+CAUHCIN V100/A30
+POKACHO V80/A50 
+TOCINAURO V120/A40
+
+class Pakiman
+{
+    constructor(n, v, a)
+    {
+        this.nombre = n; //this es la instancia de la clase pakiman
+        this.vida = v;
+        this.ataque = a;
+    }
+    hablar()
+    {
+        alert(this.nombre)
+    }
+}
+
+VAR CAUCHON =NEW PAKIMAN()
+
+cajitas.push("algo") agrega a la ultima posicion
+var cajitas = [] asignacion de array
+
+array asociativo es cuando un array es u string
 
 
+in itera en indice
+of itera sobre objeto
 
-
-
-
-
+insertar imagen con appendchild
+this se refiere a la instancia de la clase (solo para esta imagen)
+push empuja elementos a un array
 
 
 	
