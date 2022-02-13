@@ -181,7 +181,17 @@ for (l = 0;l < lineas;l++)
 		id IDENTIFICAMOS UNA EAUIQETA DE HTML PARA TRABAJR EN JS
 
 ####CLASE_16 ---> DETECTAR EVENTOS DEL TECLADO CON JS
+
 	
+	git reset nos permite volver a la version anterior.
+	hard : Nos regresa tooodo hasta allá
+	soft : Nos conserva en el staying
+	
+	Ahora para ver un commit anterior escribimos
+	git checkout idCommit Archivo.ext //
+	Si queremos volverlo permanente, entonces 
+	git add
+	git commit
 	
 	
 	
