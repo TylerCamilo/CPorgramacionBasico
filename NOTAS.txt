@@ -415,15 +415,33 @@ push empuja elementos a un array
 ### CLASE 23, IMPLEMENTACION DEL CAJERO AUTOMATICO
 
 	
+	Implementacion de codigo
+
+doc write:; escribe sobre la ejecucion del codigo
+
+cuando todo el codigo es leido por el nevegador
+ocurre un evento llamdo onload que iundica que ya cargó.
+cerrando el documento, Si se vuelve a llamar document.write
+genera un evento opern dando prioridad aa lo que hay en document.write
+SE SOLUCIONA:
+Creando etiqueta vacia e ir cambiandole el html
+
+resultado.innerHTML = resultado.innerHTML + e.cantidad + " billetes de  $" + e.valor + "<br/>";
+
+innerHTML es el atributo del objeto resultado
+resultado es el elemento del documento llamado resultado id
 	
+	contracción
+resultado.innerHTML += e.cantidad + " billetes de  $" + e.valor + "<br/>";
 	
+	RETOS:
 	
-	
-	
-	
-	
-	
-	
+	1. Agregar imagenes a los billetes entregados
+	2. Que la ATM empiece a quedar vacía.
+		a. Cada vez que le extraiga dinero restar dinero a caja.
+		b. Mostrar cuanto dinero queda en el ATM
+		c. Mostrar cuanto dinero se entrega por retiro
+	3. Reducir el codigo lo mas posible
 	
 	
 	

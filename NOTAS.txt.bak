@@ -193,8 +193,6 @@ for (l = 0;l < lineas;l++)
 
 ####CLASE_16 ---> DETECTAR EVENTOS DEL TECLADO CON JS
 
-<<<<<<< HEAD
-=======
 	El lugar para detectar el evento de las flechas, el lugar correcto
 	es el document debido a que es el objeto donde se hace todo.
 	las flechas son un objeto de todo, hay un objeto dentro de html que tiene
@@ -332,17 +330,7 @@ una sola funcion dibujar a traves de los load si ya esta cargada la imagen
 	
 	el limite es 500-80 = 420
 	para las posiciones en x y y
->>>>>>> 246b3a60fe5cdcc8a5fbcb3b48f7c3191c8c31a0
 	
-	git reset nos permite volver a la version anterior.
-	hard : Nos regresa tooodo hasta allá
-	soft : Nos conserva en el staying
-	
-	Ahora para ver un commit anterior escribimos
-	git checkout idCommit Archivo.ext //
-	Si queremos volverlo permanente, entonces 
-	git add
-	git commit
 	
 	Dentro de la funcion aleatorio para crear esos rangos.
 	dentro de la funcion dibujar donde sabemos que la carga esta cargada
@@ -421,16 +409,30 @@ this se refiere a la instancia de la clase (solo para esta imagen)
 push empuja elementos a un array
 
 
+###CLASE 22 DIAGRAMA DE FLUJO DE CAJERO AUTOMATICO
+
+	Explicacion del algoritmo del cajero
+### CLASE 23, IMPLEMENTACION DEL CAJERO AUTOMATICO
+
 	
+	Implementacion de codigo
+
+doc write:; escribe sobre la ejecucion del codigo
+
+cuando todo el codigo es leido por el nevegador
+ocurre un evento llamdo onload que iundica que ya cargó.
+cerrando el documento, Si se vuelve a llamar document.write
+genera un evento opern dando prioridad aa lo que hay en document.write
+SE SOLUCIONA:
+Creando etiqueta vacia e ir cambiandole el html
+
+resultado.innerHTML = resultado.innerHTML + e.cantidad + " billetes de  $" + e.valor + "<br/>";
+
+innerHTML es el atributo del objeto resultado
+resultado es el elemento del documento llamado resultado id
 	
-	
-	
-	
-	
-	
-	
-	
-	
+	contracción
+resultado.innerHTML += e.cantidad + " billetes de  $" + e.valor + "<br/>";
 	
 	
 	
