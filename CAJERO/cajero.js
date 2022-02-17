@@ -9,8 +9,7 @@ class Billete
 
 function entregarDinero()
 {
-    
-    var t  =document.getElementById("dinero");
+    var t  =document.getElementById("dinero"); //Recibe el valor del usuario
     dinero = parseInt(t.value); // usamos parsear(castear) a int el entero de la cadena caracteres
     for (var bi of caja)
     {
@@ -31,8 +30,8 @@ function entregarDinero()
     }
     if (dinero > 0)
     {        
-        resultado.innerHTML = ("No tengo ese dinero");
-    }
+        resultado.innerHTML = "No tengo ese dinero";
+    } 
     else
     {
         for(var e of entregado)
@@ -42,10 +41,7 @@ function entregarDinero()
                 resultado.innerHTML = resultado.innerHTML + e.cantidad + " billetes de  $" + e.valor + "<br/>";
             }            
         }
-    }
-
-    console.log(entregado);
-    
+    }   
 }
 
 var caja = [];
@@ -60,6 +56,7 @@ var dinero = 0;
 var div = 0;
 var papeles = 0;
 
+var saldo = document.getElementById ("saldoCaja");
 var resultado = document.getElementById("resultado");
 var b = document.getElementById("extraer"); // obtener elemento de html von un id 
 b.addEventListener("click", entregarDinero); // cuando hace click dispara la funcion
