@@ -499,11 +499,59 @@ Express libreria de JS
 AngularJS
 nodeJs ESPECIAL PARA SOCKETS
 
+###CLASE 26 como funciona un circuito electronico?
+###CLASE 27 Como prgramar un arduino??
 
+TECNOLOGIA UNITY 3D----------LEER
+	Construido con:
+	Java
+	JavaScript
+	C#
+
+codigo en la interfaz de Arduino
+
+$$$
+
+int amarillo = 13;
+int rojo = 7;
+int milisegundos = 500;
+
+void setup()
+{
+	pinMode(amarillo, OUTPUT);
+}
+
+void loop()
+{
+	digitalWrite(amarillo, HIGH);
+	digitalWrite(rojo, LOW);
+	delay (milisegundos);
+	digitalWrite(amarillo, LOW);
+	digitalWrite(rojo, HIGH);
+	delay(milisegundos*2);
+	
+}
+
+### CLASE 28 PROGRAMACION DE CIRCUITOS CON C, ARDUINO Y SKETCH
+repite clase anterior
+
+### CLASE 29 como programar un arduimo con javaScript y node
 	
 	
+	Creamos una carpeta ARDUINO
+	en ella descargargamos el paquete JhonyFive para arduino copn JS
+	$ npm install johnny-five
 	
+	hay que subir un archivo standar firmata para conectarse con jhonyFive
+	al arduino.
 	
+	Una vez subido
+	se puede programar 
+	
+	se prgrama...
+	y se ejecuta para ver los cambios de la programacion
+		
+	$ node leds.js
 	
 	
 	

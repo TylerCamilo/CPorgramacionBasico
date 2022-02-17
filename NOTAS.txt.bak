@@ -444,9 +444,97 @@ resultado.innerHTML += e.cantidad + " billetes de  $" + e.valor + "<br/>";
 	3. Reducir el codigo lo mas posible
 	
 	
+	MODELO CLIENTE SERVIDOR
 	
+### CLASE 24 MODELO CLIENTE/SERVIDOR
+
+Cliente es lo que se ha hecho, consumir navegador
+Servidor Backend
+
+bases de datos
+Mysql, relacional
+mongo DB, No relacional
+
+backend
+php
+python
+node.js, corre js en servidor. 
+
+Servidor
+Nginx
+apache
+NodeJs
+
+frontend
+html 5
+css 3
+Js
+
+
+Stack
+apache
+sql
+php
+
+STACK PLATZI
+
+NginX
+mysql
+python
+nodeJS
+golan
+mongoDB
+
+metodos en web
+
+STACK LAMP
+get, envio de datos por la URL que los regresa el backend
+post, enviar variables como formularios. colocandolo por debajo (header http) proocolo http
+ajax, 
+Sockets
+
+STACK MEAN
+mongoDB
+Express libreria de JS
+AngularJS
+nodeJs ESPECIAL PARA SOCKETS
+
+###CLASE 26 como funciona un circuito electronico?
+###CLASE 27 Como prgramar un arduino??
+
+TECNOLOGIA UNITY 3D----------LEER
+	Construido con:
+	Java
+	JavaScript
+	C#
+
+codigo en la interfaz de Arduino
+
+$$$
+
+int amarillo = 13;
+int rojo = 7;
+int milisegundos = 500;
+
+void setup()
+{
+	pinMode(amarillo, OUTPUT);
+}
+
+void loop()
+{
+	digitalWrite(amarillo, HIGH);
+	digitalWrite(rojo, LOW);
+	delay (milisegundos);
+	digitalWrite(amarillo, LOW);
+	digitalWrite(rojo, HIGH);
+	delay(milisegundos*2);
 	
-	
+}
+
+### CLASE 28 PROGRAMACION DE CIRCUITOS CON C, ARDUINO Y SKETCH
+
+
 	
 	
 	
