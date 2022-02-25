@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "johnny-five": "^2.1.0"
+    "johnny-five": "^2.1.0",
+    "port": "^0.8.1",
+    "serial": "^0.0.9",
+    "serialport": "^10.3.0"
   }
 }

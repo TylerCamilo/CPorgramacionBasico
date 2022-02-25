@@ -533,12 +533,25 @@ void loop()
 }
 
 ### CLASE 28 PROGRAMACION DE CIRCUITOS CON C, ARDUINO Y SKETCH
+repite clase anterior
 
-
+### CLASE 29 como programar un arduimo con javaScript y node
 	
 	
+	Creamos una carpeta ARDUINO
+	en ella descargargamos el paquete JhonyFive para arduino copn JS
+	$ npm install johnny-five
 	
+	hay que subir un archivo standar firmata para conectarse con jhonyFive
+	al arduino.
 	
+	Una vez subido
+	se puede programar 
+	
+	se prgrama...
+	y se ejecuta para ver los cambios de la programacion
+		
+	$ node leds.js
 	
 	
 	
